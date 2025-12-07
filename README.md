@@ -1,4 +1,4 @@
-# <N Apple Animation App
+# Apple Animation App
 
 A beautiful Flutter application featuring smooth 3D-like animations of rotating apples with dynamic background gradients and blur effects.
 
@@ -8,7 +8,7 @@ A beautiful Flutter application featuring smooth 3D-like animations of rotating 
 
 *Swipe vertically to see smooth animations with rotating apples and gradient transitions*
 
-## =� Features
+## Features
 
 - **3D-Like Rotation Effects** - Apple images rotate smoothly during page transitions
 - **Dynamic Background Gradients** - Radial gradients that change color based on the current item
@@ -17,7 +17,7 @@ A beautiful Flutter application featuring smooth 3D-like animations of rotating 
 - **Cross-Platform Support** - Works on iOS, Android, Web, macOS, Windows, and Linux
 - **Web-Optimized** - Special rendering optimizations for smooth web performance
 
-## =� Technologies Used
+## Technologies Used
 
 - **Flutter** - Cross-platform UI framework
 - **Dart** - Programming language
@@ -26,13 +26,13 @@ A beautiful Flutter application featuring smooth 3D-like animations of rotating 
 - **AnimatedBuilder** - Reactive animation updates
 - **ImageFilter** - Blur effects (mobile/desktop)
 
-## =� Prerequisites
+## Prerequisites
 
 - Flutter SDK (>=3.9.2)
 - Dart SDK
 - An IDE (VS Code, Android Studio, or IntelliJ)
 
-## =' Installation
+## Installation
 
 1. **Clone the repository**
 
@@ -61,7 +61,7 @@ A beautiful Flutter application featuring smooth 3D-like animations of rotating 
    flutter run -d chrome
    ```
 
-## <� How It Works
+## How It Works
 
 The app uses three synchronized `PageView` widgets:
 
@@ -76,14 +76,14 @@ When you swipe vertically, all three views animate in coordination:
 - The title slides to show the current item name
 - Overlay images move in the opposite direction for parallax effect
 
-## <� Key Components
+## Key Components
 
 - **HomePage** - Main stateful widget managing controllers
 - **ItemTitlePageView** - Vertical scrolling titles
 - **ItemOverlayPageView** - Background blur overlays
 - **ItemImagePageView** - Main rotating images with 3D effect
 
-## =� Dependencies
+## Dependencies
 
 ```yaml
 dependencies:
@@ -93,7 +93,7 @@ dependencies:
   google_fonts: ^6.1.0
 ```
 
-## > Contributing
+## Contributing
 
 Contributions are welcome! Feel free to:
 
@@ -101,15 +101,7 @@ Contributions are welcome! Feel free to:
 - Suggest new features
 - Submit pull requests
 
-## =h
-
-=� Author
-
-**Pinki Singh**
-
-- GitHub: [@yourusername](https://github.com/Pinkisingh13)
-
-## =O Acknowledgments
+## Acknowledgments
 
 - Apple images and design inspiration
 - Flutter team for the amazing framework
@@ -117,4 +109,4 @@ Contributions are welcome! Feel free to:
 
 ---
 
-Made with d using Flutter
+**Made with ❤️ using Flutter**
