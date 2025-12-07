@@ -1,4 +1,5 @@
 import 'dart:ui';
+import 'package:flutter/foundation.dart' show kIsWeb;
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'data.dart';
@@ -231,22 +232,30 @@ class ItemOverlayPageView extends StatelessWidget {
   }
 
   Widget _blurredImage(String asset, double width, {double sigma = 4}) {
+    final image = Image.asset(
+      asset,
+      width: width,
+      errorBuilder: (context, error, stackTrace) {
+        return Container(
+          width: width,
+          height: width,
+          decoration: BoxDecoration(
+            color: Colors.red.shade200,
+            shape: BoxShape.circle,
+          ),
+        );
+      },
+    );
+
+    // Skip ImageFilter on web to avoid performance issues
+    // Use opacity instead for a similar visual effect
+    if (kIsWeb) {
+      return Opacity(opacity: 0.6, child: image);
+    }
+
     return ImageFiltered(
       imageFilter: ImageFilter.blur(sigmaX: sigma, sigmaY: sigma),
-      child: Image.asset(
-        asset,
-        width: width,
-        errorBuilder: (context, error, stackTrace) {
-          return Container(
-            width: width,
-            height: width,
-            decoration: BoxDecoration(
-              color: Colors.red.shade200,
-              shape: BoxShape.circle,
-            ),
-          );
-        },
-      ),
+      child: image,
     );
   }
 }
